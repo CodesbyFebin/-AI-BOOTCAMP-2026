@@ -1,33 +1,46 @@
 # AI-Bootcamp 2026
 
-A practical learning path from AI/ML foundations to production LLM systems, retrieval, MLOps, and AI agents.
+A practical learning path from AI foundations to production LLM applications, retrieval, agent workflows, and AI-assisted software development.
 
-This repository contains the static showcase adapted from the Codes by Febin AI-Bootcamp site. The Pages-ready website lives in `site/`.
+**Showcase site:** [AI-Bootcamp by Codes by Febin](https://codesbyfebin.github.io/-AI-BOOTCAMP-2026/)  
+**Organizer site:** [codesbyfebin.github.io](https://codesbyfebin.github.io/)
+
+## Repository map
+
+| Path | Purpose |
+|---|---|
+| `site/` | Responsive GitHub Pages showcase |
+| `curriculum/` | Six track guides, outcomes, practice briefs, and curated upstream links |
+| `resources/` | Indexes for notebooks, examples, and tool guides |
+| `projects/` | Original capstone briefs for RAG, agents, and full-stack AI |
+| `docs/RESOURCE_MAP.md` | Search inventory of 170 AI / bootcamp repository candidates |
+| `docs/SETUP.md` | Local environment setup |
+| `docs/CONTRIBUTING.md` | Contribution and attribution guidance |
+| `.github/workflows/pages.yml` | GitHub Pages deployment |
+
+## Curriculum
+
+1. [AI / ML Foundations](curriculum/01-foundations/README.md)
+2. [Production ML Systems (MLOps)](curriculum/02-mlops/README.md)
+3. [LLM Engineering](curriculum/03-ai-systems/README.md)
+4. [RAG & Context Engineering](curriculum/04-rag-context/README.md)
+5. [Agents & Workflows](curriculum/05-agents-workflows/README.md)
+6. [AI-Assisted Building](curriculum/06-ai-assisted-building/README.md)
+
+Each track is an original guide that points learners to upstream open-source resources. The resource map includes all 170 repositories extracted from the supplied search snapshot and marks uncertain matches for review.
+
+## What you’ll build
+
+- A baseline machine-learning model and a reproducible training pipeline.
+- A model-backed application with structured outputs and evaluation.
+- A RAG prototype with document ingestion, retrieval, and grounded responses.
+- A tool-using agent or workflow with human review.
+- A full-stack AI prototype deployed with a documented setup.
+
+## Use upstream material responsibly
+
+This repo does not claim ownership of third-party repositories. It links to source projects rather than copying their files. Before importing code, notebooks, slides, or datasets, verify the current license and preserve attribution and notices. See [the resource map](docs/RESOURCE_MAP.md) and [contribution guide](docs/CONTRIBUTING.md).
 
 ## GitHub Pages
 
-The included GitHub Actions workflow publishes `site/` whenever changes are pushed to `main`.
-
-After the first successful deployment, open:
-
-https://codesbyfebin.github.io/-AI-BOOTCAMP-2026/
-
-To update the site, edit the files under `site/` and push to `main`. The workflow uploads the static files and deploys them through GitHub Pages.
-
-## Curriculum themes
-
-- Python, mathematics, machine learning and PyTorch
-- Data validation, reproducible training, MLOps and deployment
-- LLM APIs, local models, prompt engineering, MCP and evaluation
-- RAG, document processing, embeddings and retrieval
-- LangGraph workflows, agents and multi-agent systems
-- AI-assisted software development with Cursor AI
-
-The curriculum is a showcase outline. Specific course dates, enrollment, cohort size and delivery details should be confirmed with Codes by Febin.
-
-## Files
-
-- `site/index.html` — accessible, responsive landing page
-- `site/styles.css` and `site/curriculum.css` — presentation and interactions
-- `site/assets/ai-bootcamp-banner.svg` — scalable showcase banner
-- `.github/workflows/pages.yml` — GitHub Pages deployment
+The workflow publishes `site/` from `main`. Configure the repository's Pages source as **GitHub Actions** under **Settings → Pages** before the first deployment. After successful deployment, the site is available at the showcase URL above.
