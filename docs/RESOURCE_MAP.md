@@ -244,3 +244,8 @@ Track assignments are suggestions from limited metadata. “Needs review” mean
 This repository links to upstream projects; it does not copy their notebooks, slides, datasets, source files, or branding. Before importing material, check the source repository's current license and terms, preserve required notices, record the upstream URL and commit, and confirm that the material fits this curriculum. When reuse rights are unclear, keep a link or use a Git submodule instead of redistributing files.
 
 This inventory comes from the user-supplied search snapshot. Current repository status, quality, and license have not been independently verified.
+
+
+## Complete catalog
+
+The [complete catalog](../CATALOG.md) contains the same 170 candidates, grouped into six curriculum tracks and four supplementary buckets. Machine-readable copies are available in [`data/repos.json`](../data/repos.json) and [`data/repos.csv`](../data/repos.csv). The grouped lists are in [`resources/`](../resources/), and the study plan is [`CURRICULUM.md`](../CURRICULUM.md).

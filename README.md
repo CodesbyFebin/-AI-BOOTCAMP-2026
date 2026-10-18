@@ -12,11 +12,15 @@ A practical learning path from AI foundations to production LLM applications, re
 |---|---|
 | `site/` | Responsive GitHub Pages showcase |
 | `curriculum/` | Six track guides, outcomes, practice briefs, and curated upstream links |
-| `resources/` | Indexes for notebooks, examples, and tool guides |
-| `projects/` | Original capstone briefs for RAG, agents, and full-stack AI |
-| `docs/RESOURCE_MAP.md` | Search inventory of 170 AI / bootcamp repository candidates |
+| [`CURRICULUM.md`](CURRICULUM.md) | Study plan that maps the four-part program overview to six learning tracks |
+| [`CATALOG.md`](CATALOG.md) | Browse all 170 repository links in the research snapshot |
+| `resources/00–09-*.md` | Star-sorted lists grouped into six tracks and four supplementary buckets |
+| `data/repos.json` / `data/repos.csv` | Machine-readable catalog, including topics, language, update date, stars, and archived status |
+| [`docs/RESOURCE_MAP.md`](docs/RESOURCE_MAP.md) | Original candidate inventory and recommended starting points |
+| [`docs/AI-Bootcamp-Curriculum-Overview.docx`](docs/AI-Bootcamp-Curriculum-Overview.docx) | Source curriculum overview document |
 | `docs/SETUP.md` | Local environment setup |
 | `docs/CONTRIBUTING.md` | Contribution and attribution guidance |
+| `scripts/build_catalog.py` | Regenerates catalog data and indexes without overwriting the project README |
 | `.github/workflows/pages.yml` | GitHub Pages deployment |
 
 ## Curriculum
@@ -28,8 +32,13 @@ A practical learning path from AI foundations to production LLM applications, re
 5. [Agents & Workflows](curriculum/05-agents-workflows/README.md)
 6. [AI-Assisted Building](curriculum/06-ai-assisted-building/README.md)
 
-Each track is an original guide that points learners to upstream open-source resources. The resource map includes all 170 repositories extracted from the supplied search snapshot and marks uncertain matches for review.
-<img width="793" height="1983" alt="Luminous AI-Bootcamp Course Showcase" src="https://github.com/user-attachments/assets/d25f99d9-9a98-4a99-9572-b64a290bbff8" />
+The [study plan](CURRICULUM.md) connects the program overview with these six tracks and links learners to relevant upstream projects. The companion catalog organizes 170 unique repositories across the six tracks plus full-path bootcamps, cloud labs, domain projects, and cohort notes.
+
+## Catalog snapshot
+
+The catalog was prepared from the supplied GitHub search snapshot dated **2026-10-18**. At that snapshot, the 170 listed repositories had **27,294 combined stars**; 11 were marked archived. Star counts, descriptions, and repository status can change, so check each source repository before relying on it.
+
+This is a curated **link catalog**, not a code merge. The listed projects remain on their original repositories, under their owners’ licenses. This repository links to them rather than copying their notebooks, code, slides, or datasets. Repository inclusion is not an endorsement or guarantee of quality, safety, or current maintenance.
 
 ## What you’ll build
 
@@ -39,10 +48,6 @@ Each track is an original guide that points learners to upstream open-source res
 - A tool-using agent or workflow with human review.
 - A full-stack AI prototype deployed with a documented setup.
 
-## Use upstream material responsibly
-
-This repo does not claim ownership of third-party repositories. It links to source projects rather than copying their files. Before importing code, notebooks, slides, or datasets, verify the current license and preserve attribution and notices. See [the resource map](docs/RESOURCE_MAP.md) and [contribution guide](docs/CONTRIBUTING.md).
-
 ## GitHub Pages
 
-The workflow publishes `site/` from `main`. Configure the repository's Pages source as **GitHub Actions** under **Settings → Pages** before the first deployment. After successful deployment, the site is available at the showcase URL above.
+The workflow publishes `site/` from `main`. The Pages showcase is available at [codesbyfebin.github.io/-AI-BOOTCAMP-2026](https://codesbyfebin.github.io/-AI-BOOTCAMP-2026/).
